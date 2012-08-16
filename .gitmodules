@@ -1,0 +1,6 @@
+[submodule "lib/autoloader"]
+	path = lib/autoloader
+	url = git@github.com:grossvogel/Class-Map-Autoloader-for-PHP.git
+[submodule "lib/nicedog"]
+	path = lib/nicedog
+	url = git@github.com:grossvogel/nicedog.git
