@@ -13,5 +13,6 @@ chdir ($cwd);
 
 function quickstart_init ($autoLoadDir)
 {
-	AutoLoader::instance ($autoLoadDir);
+	$dir = realpath ($autoLoadDir) . '/';
+	AutoLoader::instance ($dir);
 }
