@@ -5,7 +5,7 @@
 */
 abstract class Model
 {
-	private $data; //	the db connection
+	protected $data; //	the db connection
 	
 	/**
 	*	create a model by providing the data store connection
@@ -26,7 +26,7 @@ abstract class Model
 		$stmt = $this->data->prepare ($query);
 		foreach ($params as $key => $value)
 		{
-			$stmt->bindParam ($key, $value);
+			$stmt->bindValue ($key, $value);
 		}
 		$stmt->execute ();
 		return $stmt;
